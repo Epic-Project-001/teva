@@ -15,7 +15,7 @@ export default function OurGoal() {
       </p>
       <Link
         href="/"
-        className="mt-[1.875rem] font-bold flex justify-center items-center gap-1.5 hover:underline"
+        className="mt-[1.875rem] w-fit mx-auto font-bold flex justify-center items-center gap-1.5 hover:underline"
       >
         <span className="leading-tight">
           Learn more about research studies.

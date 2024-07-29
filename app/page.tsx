@@ -11,8 +11,7 @@ import TodaysReseachStudies from "@/components/TodaysReseachStudies";
 
 export default function Home() {
   return (
-    <main className="relative">
-      <Navbar />
+    <>
       <Hero />
       <Importance />
       <OurGoal />
@@ -21,7 +20,6 @@ export default function Home() {
       <AtTeva />
       <SomeKeyFacts />
       <CTAs />
-      <Footer />
-    </main>
+    </>
   );
 }

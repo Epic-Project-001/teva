@@ -7,3 +7,13 @@
     @apply text-[1.875rem] sm:text-[2rem] leading-[2.4rem];
   }
 }
+
+body {
+  scroll-behavior: smooth;
+  font-synthesis: none;
+  font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

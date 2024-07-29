@@ -31,11 +31,11 @@ const facts: Fact[] = [
 export default function SomeKeyFacts() {
   return (
     <section className="xl:py-[6.5rem] items-center flex flex-col xl:flex-row justify-center gap-28 xl:gap-[3.125rem] text-body-text xl:px-[6.625rem] py-[3.75rem] px-6">
-      <div className="max-w-[43.125rem]">
+      <div className="max-w-[43.125rem] w-full">
         <h2 className="heading">Some key facts about research studies</h2>
         <ul className="grid gap-[0.938rem] xl:gap-0 mt-10 list-disc ml-5">
           {facts.map((fact) => (
-            <li key={fact.text} className="leading-7">
+            <li key={fact.text} className="leading-7 max-w-[35.188rem]">
               {fact.text}
               {fact.inner && (
                 <ul

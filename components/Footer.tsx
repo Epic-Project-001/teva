@@ -68,17 +68,20 @@ export default function Footer() {
         <Image
           src={TevaLogo}
           alt="Teva"
-          className="h-[84px] w-[150px] -ml-4 lg:-ml-0"
+          className="h-[84px] w-[150px] -ml-4"
           priority
         />
-        <ul className="flex flex-col md:flex-row gap-5 md:gap-20 xl:gap-[8.75rem] text-body-text">
+        <ul className="flex flex-col md:flex-row gap-5 md:gap-20 2xl:gap-[8.75rem] text-body-text">
           {links.map((section) => (
             <li key={section.type} className="leading-7">
               <span className="font-semibold">{section.type}</span>
               <ul>
                 {section.links.map((sectionItem) => (
                   <li key={sectionItem.label}>
-                    <Link href={sectionItem.href} className="hover:underline">
+                    <Link
+                      href={sectionItem.href}
+                      className="hover:underline cursor-pointer"
+                    >
                       {sectionItem.label}
                     </Link>
                   </li>
@@ -92,9 +95,12 @@ export default function Footer() {
         <span>©️ 2024 Teva. All rights reserved.</span>
         <Link
           href="/"
-          className="size-6 bg-white text-teva-blue grid place-content-center rounded-sm"
+          title="LinkedIn"
+          className="rounded cursor-pointer full p-1.5 -mr-1.5 transition-all duration-300 hover:brightness-75 bg-teva-blue"
         >
-          <FaLinkedinIn size={18} />
+          <span className="size-6 bg-white text-teva-blue grid place-content-center rounded-sm">
+            <FaLinkedinIn size={18} />
+          </span>
         </Link>
       </div>
     </footer>

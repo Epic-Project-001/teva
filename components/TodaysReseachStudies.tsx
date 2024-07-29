@@ -22,7 +22,7 @@ export default function TodaysReseachStudies() {
         </h2>
         <ul className="mt-10 w-full list-disc ml-5">
           {challenges.map((challenge) => (
-            <li className="leading-7" key={challenge}>
+            <li className="leading-7 max-w-[39.5rem]" key={challenge}>
               {challenge}
             </li>
           ))}

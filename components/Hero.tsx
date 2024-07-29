@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import AnimatedText from "./ui/AnimatedText";
+import { paths } from "@/constants/paths";
 
 export default function Hero() {
   return (
@@ -24,8 +25,8 @@ export default function Hero() {
             and participate in medical research.
           </p>
           <Link
-            href="/"
-            className="mt-11 flex gap-1.5 items-center hover:underline"
+            href='/'
+            className="mt-11 cursor-pointer flex gap-1.5 items-center hover:underline"
           >
             <span className="leading-tight">
               Interested in partnering with us?
