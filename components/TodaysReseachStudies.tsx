@@ -9,7 +9,7 @@ const challenges: string[] = [
 
 export default function TodaysReseachStudies() {
   return (
-    <section className="flex text-body-text justify-center gap-[7.625rem] px-[6.625rem]  bg-[#EEEEEE] py-[6.938rem]">
+    <section className="flex text-body-text justify-center items-center gap-[7.625rem] px-[6.625rem]  bg-[#EEEEEE] py-[6.938rem]">
       <CoupleOnCouchImage invertCircle />
       <div className="max-w-[43.125rem] w-full">
         <h2 className="text-32">
