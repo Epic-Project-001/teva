@@ -5,14 +5,14 @@ import PrimaryLink from "./ui/PrimaryLink";
 
 export default function Navbar() {
   return (
-    <nav className="flex absolute top-0 text-white px-10 py-10 left-0 w-full items-center justify-between">
+    <nav className="flex absolute top-0 text-white px-6 xl:px-10 py-10 left-0 w-full items-center justify-between">
       <Image
         src={TevaLogo}
         alt="Teva"
-        className="h-[84px] w-[150px]"
+        className="h-[84px] w-[150px] -ml-4 lg:-ml-0"
         priority
       />
-      <div className="flex gap-9 items-center">
+      <div className="flex md:gap-9 gap-6 items-center">
         <Link href="/" type="button" className="leading-8">
           FAQs
         </Link>

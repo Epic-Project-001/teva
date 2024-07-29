@@ -9,10 +9,15 @@ const challenges: string[] = [
 
 export default function TodaysReseachStudies() {
   return (
-    <section className="flex text-body-text justify-center items-center gap-[7.625rem] px-[6.625rem]  bg-[#EEEEEE] py-[6.938rem]">
-      <CoupleOnCouchImage invertCircle />
-      <div className="max-w-[43.125rem] w-full">
-        <h2 className="text-32">
+    <section className="flex flex-col-reverse xl:flex-row text-body-text justify-center items-center gap-28 xl:gap-[7.625rem] px-6 xl:px-[6.625rem] bg-[#EEEEEE] py-[3.75rem] xl:py-[6.938rem]">
+      <div className="hidden xl:block shrink-0">
+        <CoupleOnCouchImage invertCircle />
+      </div>
+      <div className="block xl:hidden shrink-0">
+        <CoupleOnCouchImage />
+      </div>
+      <div className="max-w-[43.125rem]">
+        <h2 className="heading">
           Today’s research studies are designed to overcome past challenges.
         </h2>
         <ul className="mt-10 w-full list-disc ml-5">

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-32 {
-    @apply text-[2rem] leading-[2.4rem];
+  .heading {
+    @apply text-[1.875rem] sm:text-[2rem] leading-[2.4rem];
   }
 }

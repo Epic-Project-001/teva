@@ -9,14 +9,14 @@ const reasons: string[] = [
 
 export default function ReasonsForLackOfDiversity() {
   return (
-    <section className="py-[6.5rem] flex justify-center px-[6.625rem] gap-[7.625rem] text-body-text">
+    <section className="py-[3.75rem] xl:py-[6.5rem] flex flex-col items-center xl:flex-row justify-center px-6 xl:px-[6.625rem] gap-28 xl:gap-[7.625rem] xl:items-start text-body-text">
       <div className="max-w-[43.125rem]">
-        <h2 className="text-32 leading-9">
+        <h2 className="heading leading-9">
           Historically, there was inequality in medical research, leading to
           underrepresentation of some communities.
         </h2>
         <p className="mt-6">Some reasons for the lack of diversity included:</p>
-        <ul className="mt-10 list-disc">
+        <ul className="ml-5 mt-10 list-disc">
           {reasons.map((reason) => (
             <li key={reason} className="leading-7">
               {reason}

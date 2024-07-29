@@ -30,15 +30,18 @@ const facts: Fact[] = [
 
 export default function SomeKeyFacts() {
   return (
-    <section className="py-[6.5rem] items-center flex justify-center gap-[3.125rem] text-body-text px-[6.625rem]">
+    <section className="xl:py-[6.5rem] items-center flex flex-col xl:flex-row justify-center gap-28 xl:gap-[3.125rem] text-body-text xl:px-[6.625rem] py-[3.75rem] px-6">
       <div className="max-w-[43.125rem]">
-        <h2 className="text-32">Some key facts about research studies</h2>
-        <ul className="mt-10 list-disc ml-5">
+        <h2 className="heading">Some key facts about research studies</h2>
+        <ul className="grid gap-[0.938rem] xl:gap-0 mt-10 list-disc ml-5">
           {facts.map((fact) => (
             <li key={fact.text} className="leading-7">
               {fact.text}
               {fact.inner && (
-                <ul style={{ listStyleType: "circle" }} className="ml-5">
+                <ul
+                  style={{ listStyleType: "circle" }}
+                  className="ml-5 mt-[0.938rem] xl:mt-0 grid gap-[0.938rem] xl:gap-0"
+                >
                   {fact.inner.map((innerText) => (
                     <li key={innerText} className="inner-text leading-7">
                       {innerText}

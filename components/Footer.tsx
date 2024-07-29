@@ -64,17 +64,17 @@ const links: Link[] = [
 export default function Footer() {
   return (
     <footer className="border-t-[6px] border-teva-blue">
-      <div className="p-20 flex justify-between items-start bg-white">
+      <div className="px-6 py-8 xl:p-20 flex flex-col lg:flex-row justify-between items-start bg-white">
         <Image
           src={TevaLogo}
           alt="Teva"
-          className="h-[84px] w-[150px]"
+          className="h-[84px] w-[150px] -ml-4 lg:-ml-0"
           priority
         />
-        <ul className="flex gap-[8.75rem] text-body-text">
+        <ul className="flex flex-col md:flex-row gap-5 md:gap-20 xl:gap-[8.75rem] text-body-text">
           {links.map((section) => (
             <li key={section.type} className="leading-7">
-              {section.type}
+              <span className="font-semibold">{section.type}</span>
               <ul>
                 {section.links.map((sectionItem) => (
                   <li key={sectionItem.label}>
@@ -88,7 +88,7 @@ export default function Footer() {
           ))}
         </ul>
       </div>
-      <div className="py-10 flex items-center justify-between px-20 leading-6 bg-teva-blue text-white">
+      <div className="py-8 xl:py-10 flex items-center justify-between px-6 xl:px-20 leading-6 bg-teva-blue text-white">
         <span>©️ 2024 Teva. All rights reserved.</span>
         <Link
           href="/"

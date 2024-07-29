@@ -12,11 +12,11 @@ const buttonVariants = cva(
     variants: {
       size: {
         md: "h-14",
-        sm: "h-[56px]",
+        sm: "h-[2.625rem] xl:h-[56px]",
       },
     },
     defaultVariants: {
-      size: "sm",
+      size: "md",
     },
   }
 );
