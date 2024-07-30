@@ -15,8 +15,8 @@ export default function Logo({
     <Link
       href="/"
       className={cn(
-        "rounded-full cursor-pointer shrink-0 flex items-center bg-white w-[10rem] xl:w-[13rem]",
-        { "-ml-6 justify-end": isCropped },
+        "rounded-full cursor-pointer shrink-0 flex items-center bg-white w-[10rem] xl:w-[15.375rem]",
+        { "-ml-10 justify-end": isCropped },
         { "justify-center": !isCropped },
         className
       )}

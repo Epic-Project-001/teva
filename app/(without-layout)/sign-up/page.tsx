@@ -4,7 +4,6 @@ import { FormProvider, useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import InputField from "@/components/InputField";
-import PrimaryLink from "@/components/PrimaryLink";
 import PrimaryButton from "@/components/PrimaryButton";
 
 const schema = yupResolver(
