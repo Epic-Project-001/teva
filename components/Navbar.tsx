@@ -1,27 +1,21 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
-import TevaLogo from "/public/assets/teva-logo.webp";
-import PrimaryLink from "./ui/PrimaryLink";
+import PrimaryLink from "./PrimaryLink";
 import { paths } from "@/constants/paths";
 import { usePathname } from "next/navigation";
+import Logo from "./Logo";
 
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="flex absolute top-0 text-white px-6 xl:px-10 py-10 left-0 w-full items-center justify-between">
+    <nav className="flex absolute top-0 text-white pr-6 xl:pr-10 py-10 left-0 w-full items-center justify-between">
       <Link href="/" className="cursor-pointer shrink-0">
-        <Image
-          src={TevaLogo}
-          alt="Teva"
-          className="h-[84px] w-[150px] -ml-4 lg:-ml-0"
-          priority
-        />
+        <Logo />
       </Link>
       <div className="flex md:gap-9 gap-6 items-center">
         {pathname.includes(paths.faqs) ? (
-          <span className="leading-8 hidden sm:block pointer-cursor hover:underline">
+          <span className="leading-8 hidden sm:block">
             Diversity, equity and inclusion
           </span>
         ) : (
@@ -32,7 +26,7 @@ export default function Navbar() {
             FAQs
           </Link>
         )}
-        <PrimaryLink href="/" type="button" size="sm">
+        <PrimaryLink href={paths.signUp} type="button" size="sm">
           Sign up
         </PrimaryLink>
       </div>

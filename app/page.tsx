@@ -1,13 +1,11 @@
-import AtTeva from "@/components/AtTeva";
-import CTAs from "@/components/CTAs";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Importance from "@/components/Importance";
-import Navbar from "@/components/Navbar";
-import OurGoal from "@/components/OurGoal";
-import ReasonsForLackOfDiversity from "@/components/ReasonsForLackOfDiversity";
-import SomeKeyFacts from "@/components/SomeKeyFacts";
-import TodaysReseachStudies from "@/components/TodaysReseachStudies";
+import AtTeva from "@/components/home/AtTeva";
+import CTAs from "@/components/home/CTAs";
+import Hero from "@/components/home/Hero";
+import Importance from "@/components/home/Importance";
+import OurGoal from "@/components/home/OurGoal";
+import ReasonsForLackOfDiversity from "@/components/home/ReasonsForLackOfDiversity";
+import SomeKeyFacts from "@/components/home/SomeKeyFacts";
+import TodaysReseachStudies from "@/components/home/TodaysReseachStudies";
 
 export default function Home() {
   return (

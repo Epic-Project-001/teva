@@ -10,7 +10,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Teva", template: "%s | Teva" },
+  title: { default: "Teva - Home", template: "Teva - %s" },
   description: "Diversity, equity, and inclusion",
 };
 
