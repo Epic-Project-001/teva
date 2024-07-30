@@ -8,8 +8,11 @@
   }
 }
 
-body {
+* {
   scroll-behavior: smooth;
+}
+
+body {
   font-synthesis: none;
   font-feature-settings: "kern";
   -moz-font-feature-settings: "kern";
