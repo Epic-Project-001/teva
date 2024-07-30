@@ -1,3 +1,4 @@
+import { paths } from "@/constants/paths";
 import PrimaryLink from "../PrimaryLink";
 
 export default function CTAs() {
@@ -12,7 +13,7 @@ export default function CTAs() {
           Ready to help empower your community to learn more about medical
           research and access potentially life-changing research studies?{" "}
         </p>
-        <PrimaryLink href="/" className="mt-6 w-fit mx-auto">
+        <PrimaryLink href={paths.signUp} className="mt-6 w-fit mx-auto">
           Sign up
         </PrimaryLink>
       </article>

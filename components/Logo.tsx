@@ -7,14 +7,15 @@ export default function Logo({
   isCropped = true,
   className,
 }: {
-  isCropped: boolean;
-  className: string;
+  isCropped?: boolean;
+  className?: string;
 }) {
   return (
     <div
       className={cn(
-        "rounded-full flex items-center justify-end bg-white w-9rem w-[10rem] xl:w-[12rem]",
-        { "-ml-9": isCropped },
+        "rounded-full flex items-center bg-white w-9rem w-[10rem] xl:w-[12rem]",
+        { "-ml-9 justify-end": isCropped },
+        { "justify-center": !isCropped },
         className
       )}
     >

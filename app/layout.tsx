@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 
 const lato = Lato({
   weight: ["100", "300", "400", "700", "900"],
@@ -21,10 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-hidden">
-      <body className={`h-[100svh] overflow-y-auto relative ${lato.className}`}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className={lato.className}>
+        <main className="h-[100svh] overflow-y-auto relative">{children}</main>
       </body>
     </html>
   );
