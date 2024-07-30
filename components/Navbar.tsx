@@ -10,9 +10,7 @@ export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex absolute top-0 text-white pr-6 xl:pr-10 py-10 left-0 w-full items-center justify-between">
-      <Link href="/" className="cursor-pointer shrink-0">
-        <Logo />
-      </Link>
+      <Logo />
       <div className="flex md:gap-9 gap-6 items-center">
         {pathname.includes(paths.faqs) ? (
           <span className="leading-8 hidden sm:block">
