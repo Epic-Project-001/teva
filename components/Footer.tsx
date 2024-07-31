@@ -1,7 +1,6 @@
 import Image from "next/image";
 import TevaLogo from "/public/assets/teva-logo.webp";
 import Link from "next/link";
-import { FaLinkedinIn } from "react-icons/fa";
 import { paths } from "@/constants/paths";
 
 type Link = {
@@ -51,11 +50,11 @@ const links: Link[] = [
     type: "Contact",
     links: [
       {
-        label: "ES-SCLC@henlius.com",
+        label: "TBD",
         href: "/",
       },
       {
-        label: "LS-SCLC@henlius.com",
+        label: "TBD",
         href: "/",
       },
     ],
@@ -97,15 +96,6 @@ export default function Footer() {
         <span className="text-white">
           &#169; 2024 Teva. All rights reserved.
         </span>
-        <Link
-          href="/"
-          title="LinkedIn"
-          className="rounded cursor-pointer full p-1.5 -mr-1.5 transition-all duration-300 hover:brightness-75 bg-teva-blue"
-        >
-          <span className="size-6 bg-white text-teva-blue grid place-content-center rounded-sm">
-            <FaLinkedinIn size={18} />
-          </span>
-        </Link>
       </div>
     </footer>
   );
