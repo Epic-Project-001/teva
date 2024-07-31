@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 
 export default function FaqsHero() {
   return (
-    <section className="max-h-[850px] h-[100svh] bg-[url('/assets/faq-hero-bg.jpeg')] bg-no-repeat bg-cover bg-center text-white">
+    <section className="max-h-[850px] h-[100svh] bg-[url('/assets/faq-hero-bg.jpeg')] bg-no-repeat bg-cover xl:bg-top bg-center text-white">
       <div
         className="h-full flex flex-col items-center justify-center px-6"
         style={{

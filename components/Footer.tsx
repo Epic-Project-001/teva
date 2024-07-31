@@ -94,7 +94,9 @@ export default function Footer() {
         </ul>
       </div>
       <div className="py-8 xl:py-10 flex items-center justify-between px-6 xl:px-20 leading-6 bg-teva-blue text-white">
-        <span>©️ 2024 Teva. All rights reserved.</span>
+        <span className="text-white">
+          &#169; 2024 Teva. All rights reserved.
+        </span>
         <Link
           href="/"
           title="LinkedIn"
