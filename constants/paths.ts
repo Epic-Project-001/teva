@@ -14,6 +14,6 @@ export const paths = {
 
   // Section #IDs
   diversityImportance: `/#${sectionIds.diversityImportance}`,
-  questionsAndAnswers: `/#${sectionIds.questionsAndAnswers}`,
+  questionsAndAnswers: `#${sectionIds.questionsAndAnswers}`,
   learnMoreAboutResearchStudies: `/#${sectionIds.learnMoreAboutResearchStudies}`,
 };

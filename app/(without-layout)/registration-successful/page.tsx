@@ -1,4 +1,9 @@
 import PrimaryLink from "@/components/PrimaryLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Registration Success",
+};
 
 export default function RegistrationSuccessful() {
   return (
