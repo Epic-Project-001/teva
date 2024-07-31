@@ -1,6 +1,7 @@
 import SectionPicture from "../SectionPicture";
 import ElderlyWomanWearingGlasses from "/public/assets/elderly-woman-wearing-glasses.jpeg";
 import CoupleOnCouch from "/public/assets/couple-on-couch.webp";
+import { sectionIds } from "@/constants/sectionId";
 
 const challenges: string[] = [
   "Better ethical principles, oversight by multiple parties, and transparency with study participants are helping to overcome medical mistrust.",
@@ -11,7 +12,10 @@ const challenges: string[] = [
 
 export default function TodaysReseachStudies() {
   return (
-    <section className="flex flex-col-reverse xl:flex-row text-body-text justify-center items-center gap-28 xl:gap-[7.625rem] px-6 xl:px-[6.625rem] bg-[#EEEEEE] py-[3.75rem] xl:py-[6.938rem]">
+    <section
+      id={sectionIds.learnMoreAboutResearchStudies}
+      className="flex flex-col-reverse xl:flex-row text-body-text justify-center items-center gap-28 xl:gap-[7.625rem] px-6 xl:px-[6.625rem] bg-[#EEEEEE] py-[3.75rem] xl:py-[6.938rem]"
+    >
       <div className="hidden xl:block shrink-0">
         <SectionPicture
           invertCircle

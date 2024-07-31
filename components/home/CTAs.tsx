@@ -26,8 +26,12 @@ export default function CTAs() {
           Check out these resources:
         </p>
         <div className="flex gap-10 lg:flex-row flex-col justify-center lg:gap-20 xl:gap-[9.063rem] mt-6">
-          <PrimaryLink href="/">Test Clinical Trials</PrimaryLink>
-          <PrimaryLink href="/">Clinicaltrials.gov</PrimaryLink>
+          <PrimaryLink target="_blank" href={paths.tevaClinicalTrials}>
+            Teva Clinical Trials
+          </PrimaryLink>
+          <PrimaryLink target="_blank" href={paths.govClinicalTrails}>
+            Clinicaltrials.gov
+          </PrimaryLink>
         </div>
       </article>
     </section>

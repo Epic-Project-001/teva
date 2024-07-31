@@ -12,8 +12,8 @@ export default function SignUp() {
         Opt-in Form
       </h2>
       <p className="mt-5 text-2xl leading-9 text-center text-balance">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+        Sign up for our email newsletters to learn more about medical research
+        and raise awareness about research studies in your community.
       </p>
       <SignUpForm />
     </div>

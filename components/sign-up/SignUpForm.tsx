@@ -5,6 +5,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import InputField from "@/components/InputField";
 import PrimaryButton from "@/components/PrimaryButton";
+import { useRouter } from "next/navigation";
+import { paths } from "@/constants/paths";
 
 const schema = yupResolver(
   yup.object({
@@ -22,8 +24,11 @@ const schema = yupResolver(
 );
 
 export default function SignUpForm() {
+  const router = useRouter();
   const methods = useForm({ resolver: schema });
-  const onSubmit = methods.handleSubmit(() => {});
+  const onSubmit = methods.handleSubmit(() => {
+    router.push(paths.registrationSuccesful);
+  });
 
   return (
     <FormProvider {...methods}>

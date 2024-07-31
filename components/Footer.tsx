@@ -76,8 +76,8 @@ export default function Footer() {
             <li key={section.type} className="leading-7">
               <span className="font-semibold">{section.type}</span>
               <ul>
-                {section.links.map((sectionItem) => (
-                  <li key={sectionItem.label}>
+                {section.links.map((sectionItem, index) => (
+                  <li key={String(index + 1)}>
                     <Link
                       target="_blank"
                       href={sectionItem.href}

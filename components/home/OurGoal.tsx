@@ -1,3 +1,4 @@
+import { paths } from "@/constants/paths";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -14,7 +15,7 @@ export default function OurGoal() {
         of life have access to our research studies.
       </p>
       <Link
-        href="/"
+        href={paths.learnMoreAboutResearchStudies}
         className="mt-[1.875rem] w-fit mx-auto font-bold flex justify-center items-center gap-1.5 hover:underline"
       >
         <span className="leading-tight">
