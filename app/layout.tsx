@@ -1,10 +1,25 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const lato = Lato({
-  weight: ["100", "300", "400", "700", "900"],
-  subsets: ["latin"],
+const tevaSans = localFont({
+  src: [
+    {
+      path: "./TevaSans-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./TevaSans-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./TevaSans-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-hidden">
-      <body className={lato.className}>
+      <body className={tevaSans.className}>
         <main className="h-[100svh] overflow-y-auto relative">{children}</main>
       </body>
     </html>

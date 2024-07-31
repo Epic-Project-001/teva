@@ -1,5 +1,6 @@
 import PrimaryLink from "@/components/PrimaryLink";
 import { paths } from "@/constants/paths";
+import { sectionIds } from "@/constants/sectionId";
 
 type FAQ = {
   question: string;
@@ -34,7 +35,7 @@ const faqs: FAQ[] = [
 export default function QuestionsAndAnswers() {
   return (
     <section
-      id="questions"
+      id={sectionIds.questionsAndAnswers}
       className="bg-[#EEEEEE] py-8 px-6 xl:px-10 xl:py-[9.688rem] text-body-text"
     >
       <ul className="grid gap-10 max-w-[75rem] mx-auto">

@@ -1,6 +1,11 @@
+import { sectionIds } from "@/constants/sectionId";
+
 export default function Importance() {
   return (
-    <section className="text-center bg-[#EEEEEE]">
+    <section
+      id={sectionIds.diversityImportance}
+      className="text-center bg-[#EEEEEE]"
+    >
       <div className="py-[4.25rem] px-10">
         <div className="max-w-[62.188rem] mx-auto text-body-text">
           <h2 className="heading">

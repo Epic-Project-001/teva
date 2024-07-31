@@ -4,7 +4,7 @@ import PrimaryLink from "../PrimaryLink";
 export default function CTAs() {
   return (
     <section className="text-body-text text-center">
-      <article className="bg-[#EEEEEE] p-10 flex flex-col items-center">
+      <article className="bg-[#EEEEEE] px-6 py-[3.75rem] xl:py-[6.5rem] flex flex-col items-center">
         <h2 className="text-[1.875rem] xl:text-5xl font-semibold xl:font-normal leading-9 xl:leading-[52.8px] max-w-[57.063rem]">
           Diversity in research studies is improving, but there is still work to
           be done.
@@ -17,7 +17,7 @@ export default function CTAs() {
           Sign up
         </PrimaryLink>
       </article>
-      <article className="bg-white p-10 flex flex-col items-center">
+      <article className="bg-white px-6 py-[3.75rem] xl:py-[6.5rem] flex flex-col items-center">
         <h2 className="text-[1.875rem] xl:text-5xl font-semibold xl:font-normal leading-9 xl:leading-[52.8px] max-w-[57.063rem]">
           Interested in finding out about research studies you may be able to
           participate in?

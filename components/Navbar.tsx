@@ -13,9 +13,12 @@ export default function Navbar() {
       <Logo />
       <div className="flex md:gap-9 gap-6 items-center">
         {pathname.includes(paths.faqs) ? (
-          <span className="leading-8 hidden sm:block">
+          <Link
+            href={paths.diversityImportance}
+            className="hover:underline cursor-pointer leading-8 hidden sm:block"
+          >
             Diversity, equity and inclusion
-          </span>
+          </Link>
         ) : (
           <Link
             href={paths.faqs}

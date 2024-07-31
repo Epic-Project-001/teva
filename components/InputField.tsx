@@ -59,7 +59,7 @@ const InputField = <T extends FieldValues>({
           <motion.p
             animate={shake ? { x: [0, -6, 6, -6, 6, 0] } : {}}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="absolute bottom-0.5 text-red-500 right-1.5 text-xs text-pred sm:text-[13px]"
+            className="absolute bottom-0.5 text-red-500 right-2 text-xs text-pred sm:text-[13px]"
           >
             {String(errors?.[id].message)}
           </motion.p>

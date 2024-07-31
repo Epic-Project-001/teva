@@ -1,3 +1,4 @@
+import { paths } from "@/constants/paths";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -15,7 +16,7 @@ export default function FaqsHero() {
           Frequently Asked Questions
         </h1>
         <Link
-          href="#questions"
+          href={paths.questionsAndAnswers}
           className="mt-11 cursor-pointer flex gap-1.5 items-center hover:underline"
         >
           <span className="leading-tight">Learn More</span>

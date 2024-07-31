@@ -5,7 +5,7 @@ import AnimatedText from "../AnimatedText";
 
 export default function Hero() {
   return (
-    <section className="bg-[url('/assets/hero-bg.jpeg')] bg-no-repeat bg-[center_left_-21rem] bg-cover sm:bg-center text-white h-[100svh] max-h-[850px]">
+    <section className="bg-[url('/assets/hero-bg.jpeg')] bg-no-repeat bg-[center_left_-21rem] bg-cover sm:bg-center xl:bg-right-top text-white h-[100svh] max-h-[850px]">
       <div
         className="h-full flex flex-col items-center justify-center px-6"
         style={{

@@ -2,6 +2,7 @@ import Image from "next/image";
 import TevaLogo from "/public/assets/teva-logo.webp";
 import Link from "next/link";
 import { FaLinkedinIn } from "react-icons/fa";
+import { paths } from "@/constants/paths";
 
 type Link = {
   type: string;
@@ -38,11 +39,11 @@ const links: Link[] = [
     links: [
       {
         label: "Terms of Use",
-        href: "/",
+        href: paths.termsOfUse,
       },
       {
         label: "Privacy Policy",
-        href: "/",
+        href: paths.privacyPolicy,
       },
     ],
   },
@@ -79,6 +80,7 @@ export default function Footer() {
                 {section.links.map((sectionItem) => (
                   <li key={sectionItem.label}>
                     <Link
+                      target="_blank"
                       href={sectionItem.href}
                       className="hover:underline cursor-pointer"
                     >
