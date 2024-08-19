@@ -13,14 +13,14 @@ const schema = yupResolver(
     firstname: yup.string().required("First Name is required"),
     lastname: yup.string().required("Last Name is required"),
     zipCode: yup.string().required("Zip Code is required"),
-    // email: yup
-    //   .string()
-    //   .required("Email is required")
-    //   .trim()
-    //   .matches(
-    //     /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{1,}$/,
-    //     "Incomplete email"
-    //   ),
+    email: yup
+      .string()
+      .required("Email is required")
+      .trim()
+      .matches(
+        /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{1,}$/,
+        "Incomplete email"
+      ),
   })
 );
 
