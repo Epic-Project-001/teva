@@ -7,6 +7,7 @@ export const paths = {
   registrationSuccesful: "/registration-successful",
 
   // External navigation
+  stayConnected: "/",
   termsOfUse: "https://www.tevausa.com/general-pages/legal-notice/",
   privacyPolicy: "https://www.tevausa.com/general-pages/policy3/",
   tevaClinicalTrials: "https://www.tevapharm.com/teva-clinical-trials/",

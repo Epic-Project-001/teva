@@ -16,12 +16,12 @@ export default function Hero() {
         <div className="max-w-[996px] flex flex-col items-center justify-center">
           <AnimatedText>
             <h1 className="text-[2.625rem] leading-[46.2px] lg:leading-[79.2px] text-center lg:text-[4.5rem] font-semibold lg:font-normal">
-              Diversity, equity, and inclusion
+              Diverse Voices, Stronger Science
             </h1>
           </AnimatedText>
           <p className="text-2xl mt-5 leading-9 text-center text-balance md:text-wrap">
-            We are committed to empowering diverse communities to learn about
-            and participate in medical research.
+            Empowering diverse communities to learn about and participate in
+            medical research
           </p>
           <Link
             href="/"

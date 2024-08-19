@@ -7,6 +7,7 @@ import ReasonsForLackOfDiversity from "@/components/home/ReasonsForLackOfDiversi
 import SomeKeyFacts from "@/components/home/SomeKeyFacts";
 import TodaysReseachStudies from "@/components/home/TodaysReseachStudies";
 
+
 export default function Home() {
   return (
     <>
