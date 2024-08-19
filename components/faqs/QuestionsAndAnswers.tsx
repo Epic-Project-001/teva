@@ -41,7 +41,9 @@ export default function QuestionsAndAnswers() {
       <ul className="grid gap-10 max-w-[75rem] mx-auto">
         {faqs.map((faq) => (
           <li key={faq.question}>
-            <p className="text-[1.125rem] leading-8">{faq.question}</p>
+            <p className="text-[1.125rem] font-bold leading-8">
+              {faq.question}
+            </p>
             <p className="leading-7 mt-2">{faq.answer}</p>
           </li>
         ))}
