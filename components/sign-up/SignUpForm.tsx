@@ -12,14 +12,15 @@ const schema = yupResolver(
   yup.object({
     firstname: yup.string().required("First Name is required"),
     lastname: yup.string().required("Last Name is required"),
-    email: yup
-      .string()
-      .required("Email is required")
-      .trim()
-      .matches(
-        /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{1,}$/,
-        "Incomplete email"
-      ),
+    zipCode: yup.string().required("Zip Code is required"),
+    // email: yup
+    //   .string()
+    //   .required("Email is required")
+    //   .trim()
+    //   .matches(
+    //     /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{1,}$/,
+    //     "Incomplete email"
+    //   ),
   })
 );
 
@@ -40,6 +41,7 @@ export default function SignUpForm() {
         <InputField label="First Name" id="firstname" />
         <InputField label="Last Name" id="lastname" />
         <InputField label="Email" id="email" />
+        <InputField label="Zip Code" id="zipCode" />
       </form>
       <PrimaryButton
         className="mt-16 w-full md:w-fit lg:mt-20 md:mt-[7rem]"

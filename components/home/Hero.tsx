@@ -13,7 +13,7 @@ export default function Hero() {
             "linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 19.24%)",
         }}
       >
-        <div className="max-w-[996px] flex flex-col items-center justify-center">
+        <div className="md:pt-[200px] max-w-[1000px] flex flex-col items-center justify-center">
           <AnimatedText>
             <h1 className="text-[2.625rem] leading-[46.2px] lg:leading-[79.2px] text-center lg:text-[4.5rem] font-semibold lg:font-normal">
               Diverse Voices, Stronger Science
