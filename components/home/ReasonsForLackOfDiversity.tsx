@@ -47,11 +47,9 @@ export default function ReasonsForLackOfDiversity() {
         <ul className="ml-9 mt-10 xl:grid-cols-4 grid md:grid-cols-2 gap-10 max-w-[32.125rem] xl:max-w-full">
           {reasons.map((reason) => (
             <li key={reason.description} className="h-full leading-7">
-              <Image
-                className="size-[9.375rem] object-fit mx-auto"
-                src={reason.icon}
-                alt={reason.description}
-              />
+              <div className="size-[9.375rem]  mx-auto flex flex-col items-center justify-end">
+                <Image src={reason.icon} alt={reason.description} />
+              </div>
               <p className="text-center mx-auto mt-7">{reason.description}</p>
             </li>
           ))}
