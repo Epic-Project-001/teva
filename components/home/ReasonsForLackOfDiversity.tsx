@@ -42,7 +42,7 @@ export default function ReasonsForLackOfDiversity() {
           leading to underrepresentation of some communities.
         </h2>
         <p className="mt-6 text-center ">
-          Some reasons for the lack of diversity included:
+          Some reasons for the lack of diversity include:
         </p>
         <ul className="ml-9 mt-10 xl:grid-cols-4 grid md:grid-cols-2 gap-10 max-w-[32.125rem] xl:max-w-full">
           {reasons.map((reason) => (
