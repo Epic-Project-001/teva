@@ -44,7 +44,7 @@ export default function ReasonsForLackOfDiversity() {
         <p className="mt-6 text-center ">
           Some reasons for the lack of diversity include:
         </p>
-        <ul className="ml-9 mt-10 xl:grid-cols-4 grid md:grid-cols-2 gap-10 max-w-[32.125rem] xl:max-w-full">
+        <ul className="mt-10 xl:grid-cols-4 grid md:grid-cols-2 gap-10 max-w-[32.125rem] xl:max-w-full">
           {reasons.map((reason) => (
             <li key={reason.description} className="h-full leading-7">
               <div className="size-[9.375rem]  mx-auto flex flex-col items-center justify-end">
