@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         "teva-teal": "#3C7E79",
         "teva-blue": "#00567A",
+        "teva-green": "#AFCB37",
         "body-text": "#424242",
       },
     },

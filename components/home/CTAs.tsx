@@ -10,8 +10,8 @@ export default function CTAs() {
           be done.
         </h2>
         <p className="leading-8 mt-10 xl:mt-4 max-w-[45.313rem]">
-          Ready to help empower your community to learn more about medical
-          research and access potentially life-changing research studies?{" "}
+        Ready to learn more about medical research and how to access potentially life-changing 
+        research studies?{" "}
         </p>
         <PrimaryLink href={paths.signUp} className="mt-6 w-fit mx-auto">
           Sign up
@@ -29,9 +29,9 @@ export default function CTAs() {
           <PrimaryLink target="_blank" href={paths.tevaClinicalTrials}>
             Teva Clinical Trials
           </PrimaryLink>
-          <PrimaryLink target="_blank" href={paths.govClinicalTrails}>
+          {/* <PrimaryLink target="_blank" href={paths.govClinicalTrails}>
             Clinicaltrials.gov
-          </PrimaryLink>
+          </PrimaryLink> */}
         </div>
       </article>
     </section>

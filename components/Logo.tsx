@@ -23,7 +23,7 @@ export default function Logo({
     >
       <Image
         src={TevaLogo}
-        className="shrink-0 h-[3.5rem] xl:h-[4.5rem] w-[8rem] xl:w-[11rem]"
+        className="shrink-0 h-[3.5rem] xl:h-[4.5rem] w-[8rem] xl:w-[9.5rem]"
         alt="Teva"
       />
     </Link>

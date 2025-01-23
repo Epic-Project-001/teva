@@ -14,7 +14,7 @@ const reasons: Reason[] = [
   {
     icon: Settings,
     description:
-      "Unconscious bias because of ingrained beliefs about who may be interested or capable of participating.",
+      "Unconscious bias because of personal beliefs about who may be interested or capable of participating.",
   },
   {
     icon: HeartBreadk,
@@ -29,7 +29,7 @@ const reasons: Reason[] = [
   {
     icon: Inaccessibility,
     description:
-      "Inaccessibility due to factors that make participation difficult (eg, lack of language or disability accommodations, and time/expense for getting to the study site).",
+      "Inaccessibility due to factors that make participation difficult (such as language barrier, disability, or time/expense to get to the study site).",
   },
 ];
 

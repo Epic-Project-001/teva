@@ -5,6 +5,15 @@ export const metadata: Metadata = {
   title: "Sign Up",
 };
 
+// async function getUserCountry() {
+//   const country_code = fetch("https://ipinfo.io/json?token=<YOUR_API_TOKEN>")
+//     .then((response) => response.json())
+//     .then((data) => {
+//       console.log(`Country: ${data.country}`);
+//     })
+//     .catch((error) => console.error("Error:", error));
+// }
+
 export default function SignUp() {
   return (
     <div className="h-full flex flex-col items-center justify-center px-6 w-full max-w-[75rem] mx-auto">
@@ -16,6 +25,9 @@ export default function SignUp() {
         and raise awareness about research studies in your community.
       </p>
       <SignUpForm />
+      <p className="mt-16 text-md leading-9 text-center text-balance">
+        Any information you submit is secured with AES-256 encryption
+      </p>
     </div>
   );
 }

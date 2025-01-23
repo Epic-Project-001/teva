@@ -12,12 +12,12 @@ export default function Importance() {
             Why is diversity, equity, and inclusion in medical research
             important?
           </h2>
-          <p className="mt-10 leading-7">
-            For a new medicine to truly help the people it is intended for,
-            individuals from diverse backgrounds need to be part of the research
-            studies for that medicine. People of different genders, ages, ethnic
-            backgrounds, physical capabilities, and socioeconomic statuses are
-            needed.
+          <p className="mt-10 leading-7 text-xl">
+            For a new investigational medicine to truly help the people it is
+            intended for, individuals from diverse backgrounds need to be part
+            of the research studies for that medicine. People of different
+            genders, ages, ethnic backgrounds, physical capabilities, and
+            socioeconomic statuses are needed.
           </p>
         </div>
       </div>

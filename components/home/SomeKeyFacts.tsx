@@ -8,18 +8,22 @@ type Fact = {
 
 const facts: Fact[] = [
   {
-    text: "Research that tests how well new medical approaches work in people is called a clinical trial or clinical study.",
+    text: "Research that tests how well new investigational medical approaches work in people is called a clinical trial or clinical study. Investigational means a potential drug, treatment, or vaccine is not approved by the FDA, but can be given to people as part of a clinical study.",
+  },
+  {
+    text: "Studies in people are only done after years of laboratory research show that an investigational medicine/treatment may be useful.",
   },
   {
     text: "These studies are done in phases:",
     inner: [
-      "Phase 1: First use of a new medicine/treatment in people",
-      "Phase 2 and 3: Further testing to learn about how well the medicine/treatment works and to better understand possible side effects",
+      "Phase 1: First use of a new investigational medicine/treatment, usually in healthy volunteers",
+      "Phase 2: Initial testing in patients to learn about whether the investigational medicine/treatment works to prevent or treat the proposed indicated.",
+      "Phase 3: Further testing to learn about how well the investigational medicine/treatment works in the disease that it is meant to treat, to determine the correct dosage, and to better understand possible side effects.",
       "Phase 4: After a medicine/treatment is approved, Phase 4 studies are a way to keep learning about a medicine/treatment in the real world when doctors prescribe it in everyday medical practice",
     ],
   },
   {
-    text: "In today’s research studies, participants’ health and safety are the most important things. Multiple parties watch over a research study, including the FDA and Ethics Committees, to make sure participants are protected.",
+    text: "In today’s research studies, participants’ health and safety are the most important things.",
   },
   {
     text: "Being in a research study is 100% voluntary. A participant can decide to stop being in a study at any time.",
@@ -54,7 +58,7 @@ export default function SomeKeyFacts() {
           ))}
         </ul>
       </div>
-      <SectionPicture src={ManAndAkid} alt="Man holding a kid" />
+      <SectionPicture src={ManAndAkid} alt="woman holding a man" />
     </section>
   );
 }
