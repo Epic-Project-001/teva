@@ -1,8 +1,34 @@
 import SignUpForm from "@/components/sign-up/SignUpForm";
+import { metadataImageUrl } from "@/constants/metadataImageUrl";
 import { Metadata } from "next";
 
+const title = "Sign up for our email newsletters.";
+const description =
+  "Sign up for our email newsletters to learn more about medical research and raise awareness about research studies in your community.";
+
 export const metadata: Metadata = {
-  title: "Sign Up",
+  title,
+  description,
+
+  openGraph: {
+    type: "article",
+    title,
+    description,
+    url: "",
+    images: [
+      {
+        url: metadataImageUrl,
+        alt: title,
+      
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+    images: metadataImageUrl,
+  },
 };
 
 // async function getUserCountry() {

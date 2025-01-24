@@ -24,11 +24,6 @@ const tevaSans = localFont({
   ],
 });
 
-export const metadata: Metadata = {
-  title: { default: "Teva - Home", template: "Teva - %s" },
-  description: "Diversity, equity, and inclusion",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,7 +37,7 @@ export default function RootLayout({
             {children}
           </main>
         </ApolloWrapper>
-        
+
         {/* Clarity */}
         <Script
           id="clarity-script"
@@ -54,9 +49,7 @@ export default function RootLayout({
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-S5S0Y9P2D0"
         />
-        <Script
-          id="google-tag-script"
-        >{`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-S5S0Y9P2D0');`}</Script>
+        <Script id="google-tag-script">{`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-S5S0Y9P2D0');`}</Script>
 
         {/* OneTrust Cookies Consent Notice */}
         <Script

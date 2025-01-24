@@ -8,6 +8,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 interface Reason {
   icon: string | StaticImport;
   description: string;
+  alt: string;
 }
 
 const reasons: Reason[] = [
@@ -15,21 +16,25 @@ const reasons: Reason[] = [
     icon: Settings,
     description:
       "Unconscious bias because of personal beliefs about who may be interested or capable of participating.",
+    alt: "Human head icon with a gear icon inside, Unconcious bias, Teva Clinical Trials, diversity, research, health equity.",
   },
   {
     icon: HeartBreadk,
     description:
       "Medical mistrust due to historical events and patients’ personal experiences with the healthcare system.",
+    alt: "Heart icon broken in half, Historical medical mistrust, Teva Clinical Trials, diversity, research, health equity.",
   },
   {
     icon: Question,
     description:
       "Lack of knowledge/awareness because patients simply don’t know these options exist, and medical professionals may not have time to stay up-to-date on available studies.",
+      alt:'Hand icon holding a question mark icon, Lack of knowledge, awareness, Teva Clinical Trials, diversity, health equity.',
   },
   {
     icon: Inaccessibility,
     description:
       "Inaccessibility due to factors that make participation difficult (such as language barrier, disability, or time/expense to get to the study site).",
+      alt:'A person walking up steps and coming to a wall icon, Teva Clinical Trials, diversity, medical research, health equity.',
   },
 ];
 

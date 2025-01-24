@@ -58,7 +58,10 @@ export default function SomeKeyFacts() {
           ))}
         </ul>
       </div>
-      <SectionPicture src={ManAndAkid} alt="woman holding a man" />
+      <SectionPicture
+        src={ManAndAkid}
+        alt="Hispanic couple smile at each other as they embrace, Teva Clinical Trials, diversity, research, health equity,"
+      />
     </section>
   );
 }

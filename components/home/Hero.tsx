@@ -6,7 +6,11 @@ import { paths } from "@/constants/paths";
 
 export default function Hero() {
   return (
-    <section className="bg-[url('/assets/hero-bg.jpeg')] md:mt-20 mt-36 bg-no-repeat  bg-[center_left_-34rem] bg-cover sm:bg-center xl:bg-top text-white h-[100svh] max-h-[850px]">
+    <section className="bg-[url('/assets/hero-bg.jpeg')] bg-no-repeat  bg-[center_left_-34rem] bg-cover sm:bg-center xl:bg-top text-white h-[100svh] max-h-[850px]">
+      <span className="sr-only">
+        An African American woman and a man in a wheelchair looking at a laptop
+        outside, Teva Clinical Trials, diversity.
+      </span>
       <div
         className="h-full flex flex-col items-center justify-center px-6"
         // style={{
@@ -28,9 +32,7 @@ export default function Hero() {
             href={paths.signUp}
             className="mt-11 cursor-pointer text-2xl flex gap-1.5 items-center hover:underline"
           >
-            <span className="leading-tight ">
-              Get included
-            </span>
+            <span className="leading-tight ">Get included</span>
             <FiArrowRight />
           </Link>
         </div>

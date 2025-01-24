@@ -20,14 +20,14 @@ export default function TodaysResearchStudies() {
         <SectionPicture
           invertCircle
           src={ElderlyWomanWearingGlasses}
-          alt="Elderly woman wearing glasses"
+          alt="Three Asian American women of varying ages look at a camera, Teva Clinical Trials, diversity, research, health equity."
         />
       </div>
       <div className="block xl:hidden shrink-0">
         <SectionPicture
           invertCircle
           src={ElderlyWomanWearingGlasses}
-          alt="Elderly woman wearing glasses"
+          alt="Hispanic couple smile at each other as they embrace, Teva Clinical Trials, diversity, research, health equity,"
         />
       </div>
       <div className="max-w-[43.125rem]">

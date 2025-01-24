@@ -8,9 +8,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <main className="relative">
+    <main>
       <HelloBar />
-      <section>
+      <section className="relative">
         <Navbar />
         {children}
         <Footer />
