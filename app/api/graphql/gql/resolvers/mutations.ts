@@ -1,56 +1,53 @@
 import axios from "axios";
 import { concat, map } from "lodash";
 import Submission from "@/app/api/graphql/gql/models/Submission";
+import * as BrevoClient from "@sendinblue/client";
 
 const Mutations: any = {
-  insertOneSubmission: async (_: any, { data }: any) => {
-    try {
-      const result = await Submission.create(data);
-      const properties = concat(
-        map(
-          [
-            { id: "email", property: "email" },
-            { id: "firstname", property: "firstname" },
-            { id: "lastname", property: "lastname" },
-            { id: "zipCode", property: "zip" },
-          ],
-          function (item: any) {
-            const { id, property } = item;
-            if (id === "_id") {
-              return {
-                property: "submission_id",
-                value: result._id.toString(),
-              };
+    insertOneSubmission: async (_: any, { data }: any) => {
+        try {
+            const result = await Submission.create(data);
+
+            try {
+                const brevo = new BrevoClient.ContactsApi();
+                const brevoApiKey = process.env.BREVO_API_KEY || process.env.NEXT_PUBLIC_BREVO_API_KEY;
+
+                console.log("BREVO API KEY:", brevoApiKey);
+
+                brevo.setApiKey(
+                    BrevoClient.ContactsApiApiKeys.apiKey,
+                    brevoApiKey!
+                );
+
+                const brevoContact = {
+                    email: result.email,
+                    attributes: {
+                        FIRSTNAME: result.firstname,
+                        LASTNAME: result.lastname,
+                        ZIPCODE: result.zipCode,
+                        LANGUAGE: result.language,
+                        BLACK: result.black,
+                        HISPANIC: result.hispanic,
+                        ASIAN: result.asian,
+                    },
+                    updateEnabled: true,
+                    listIds: [4]
+                };
+
+                const brevoResponse = await brevo.createContact(brevoContact);
+                console.log("Brevo contact created", brevoResponse.body);
+            } catch (brevoErr: any) {
+                console.error("Error sending to Brevo:");
+                console.error(brevoErr);
             }
 
-            return {
-              property,
-              value: result[id],
-            };
-          }
-        )
-      );
-      console.log("HUBSPOT PROPERTIES", properties);
-      const response = await axios.post(
-        `https://api.hubapi.com/contacts/v1/contact`,
-        { properties },
-        {
-          headers: {
-            Authorization: `Bearer ${
-              process.env.HUBSPOT_PRIVATE_APP_ACCESS_TOKEN ||
-              process.env.NEXT_PUBLIC_HUBSPOT_PRIVATE_APP_ACCESS_TOKEN
-            }`,
-            "Content-Type": "application/json",
-          },
+            return result;
+        } catch (error) {
+            console.error("Error inserting submission:", error);
+            console.error("Data that failed:", data);
+            throw new Error("Failed to insert submission.");
         }
-      );
-      console.log("HUBSPOT RESPONSE", response);
-      return result;
-    } catch (error) {
-      console.error("Error inserting submission:", error);
-      throw new Error("Failed to insert submission.");
-    }
-  },
+    },
 };
 
 export default Mutations;

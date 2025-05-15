@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { ApolloWrapper } from "@/helpers/graphql/apollo-client.wrapper";
 import Script from "next/script";
+import HeroUIProviders from "@/helpers/heroui";
 
 const tevaSans = localFont({
   src: [
@@ -33,9 +34,11 @@ export default function RootLayout({
     <html lang="en" className="overflow-hidden">
       <body className={tevaSans.className}>
         <ApolloWrapper>
-          <main className="h-[100svh] overflow-y-auto relative">
-            {children}
-          </main>
+          <HeroUIProviders>
+            <main className="h-[100svh] overflow-y-auto relative">
+              {children}
+            </main>
+          </HeroUIProviders>
         </ApolloWrapper>
 
         {/* Clarity */}
