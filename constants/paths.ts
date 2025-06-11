@@ -12,6 +12,7 @@ export const paths = {
   privacyPolicy: "https://www.tevausa.com/general-pages/policy3/",
   tevaClinicalTrials: "https://www.tevapharm.com/teva-clinical-trials/",
   govClinicalTrails: "https://clinicaltrials.gov",
+  cookiePolicy: "https://www.tevapharm.com/our-company/corporate-governance/data-privacy/",
 
   // Section #IDs
   diversityImportance: `/#${sectionIds.diversityImportance}`,

@@ -57,7 +57,7 @@ const links: Link[] = [
 const legals = [
   {
     label: "Cookies Policy",
-    href: "/#",
+    href: paths.cookiePolicy,
   },
   {
     label: "Terms of Use",
@@ -117,7 +117,7 @@ export default function Footer() {
             );
           })}
           <span className="text-white">
-            &#169; 2024 Teva. All rights reserved.
+            &#169; 2025 Teva. All rights reserved.
           </span>
         </div>
       </div>

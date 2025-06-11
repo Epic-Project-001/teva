@@ -4,9 +4,6 @@ const password =
   process.env.ATLAS_DB_PASSWORD || process.env.NEXT_PUBLIC_ATLAS_DB_PASSWORD;
 const MONGO_URI = `mongodb+srv://${user}:${password}@jumohealth.og3bk.mongodb.net/Teva?retryWrites=true&w=majority&appName=JumoHealth`;
 
-console.log("CONNECTION STRING", MONGO_URI);
-console.log("ENVIORMENT", process.env);
-console.log("PROCESS", process);
 if (!MONGO_URI) {
   throw new Error("Please define the MONGO_URI environment variable.");
 }
